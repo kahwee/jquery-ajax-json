@@ -1,0 +1,31 @@
+{
+  "name": "jquery-ajax-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browserify index.js --noparse=jquery -x jquery --standalone=jquery-ajax-json -o dist/jquery-ajax-json.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kahwee/jquery-ajax-json.git"
+  },
+  "keywords": [
+    "jquery",
+    "postjson",
+    "json"
+  ],
+  "author": "KahWee Teng <t@kw.sg> (http://kw.sg/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kahwee/jquery-ajax-json/issues"
+  },
+  "homepage": "https://github.com/kahwee/jquery-ajax-json#readme",
+  "peerDependencies": {
+    "jquery": "*"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.1"
+  }
+}
