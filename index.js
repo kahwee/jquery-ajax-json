@@ -1,4 +1,4 @@
-var $ = window.$ || window.jQuery || require('jquery');
+var $ = window.$ || window.jQuery || require('jquery')
 /**
  * Shorthand for posting JSON
  *
@@ -7,19 +7,19 @@ var $ = window.$ || window.jQuery || require('jquery');
  * @param  {Function} callback [description]
  * @return {[type]}            [description]
  */
-module.exports = function(url, data, callback) {
-	var settings = {
-		url: url,
-		contentType: 'application/json',
-		type: 'POST',
-		data: JSON.stringify(data)
-	};
-	if (callback) {
-		settings.success = callback;
-	}
-	return $.ajax(settings);
-};
+module.exports = function (url, data, callback) {
+  var settings = {
+    url: url,
+    contentType: 'application/json',
+    type: 'POST',
+    data: JSON.stringify(data)
+  }
+  if (callback) {
+    settings.success = callback
+  }
+  return $.ajax(settings)
+}
 
 if ($) {
-	$.postJSON = module.exports;
+  $.postJSON = module.exports
 }
